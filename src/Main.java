@@ -1,18 +1,21 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
-        byte edad = 18;
-        int numeroGrande = 1000;
-        float decimal = 3.14f;
-        boolean mayorEdad = true;
-        String texto = "Hola  Mundo";
+        /* EJERCICIO N°1
 
+            Pide un nombre por teclado y haz que salude
+            Ejemplo: Si introduces "Fernando", La respuesta debe ser ¡Hola Fernando!
 
-        System.out.println(numeroGrande + " Numero Grandes");
-        System.out.println(decimal + " Numero decimal");
-        System.out.println(edad + " Numero pequeños");
-        System.out.println(mayorEdad + " Muestra verdadero o falso");
-        System.out.println(texto);
+         */
+
+        Scanner sn = new Scanner (System.in);
+
+        System.out.println("Ingresa tu nombre: ");
+        String nombre = sn.nextLine();
+
+        System.out.println("¡Hola " + nombre + "!");
 
     }
 }
